@@ -1,4 +1,5 @@
 import React, {useState} from "react";
+import PropTypes from "prop-types";
 import Error from "./Error";
 
 const Formulario = ({addSearch, addPaginaActual}) => {
@@ -40,6 +41,11 @@ const Formulario = ({addSearch, addPaginaActual}) => {
 			{error ? <Error mensaje="Agrega un termino de busqueda" /> : null}
 		</form>
 	);
+};
+
+Formulario.prototype = {
+	addSearch: PropTypes.func.isRequired,
+	addPaginaActual: PropTypes.func.isRequired,
 };
 
 export default Formulario;

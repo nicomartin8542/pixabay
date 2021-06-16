@@ -51,11 +51,7 @@ function App() {
 		<div className="container">
 			<div className="jumbotron">
 				<p className="lead text-center">Buscador de imagenes</p>
-				<Formulario
-					addSearch={addSearch}
-					addPaginaActual={addPaginaActual}
-					addTotalPaginas={addPaginaActual}
-				/>
+				<Formulario addSearch={addSearch} addPaginaActual={addPaginaActual} />
 			</div>
 
 			<div className="row justify-content-center">
